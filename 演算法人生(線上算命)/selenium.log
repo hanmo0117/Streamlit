@@ -1,0 +1,115 @@
+[1670444219.201][INFO]: Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 60286
+[1670444219.201][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1670444219.721][INFO]: [2ee2217ce4b3bd8539976cc5f90c22ce] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--disable-features=NetworkService", "--window-size=1920x1080", "--disable-features=VizDisplayCompositor" ],
+            "extensions": [  ]
+         },
+         "pageLoadStrategy": "normal"
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1670444219.728][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1670444219.728][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1670444219.733][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-dev-shm-usage --disable-features=NetworkService,VizDisplayCompositor --disable-gpu --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-blink-features=ShadowDOMV0 --enable-logging --headless --log-level=0 --no-first-run --no-sandbox --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\alt41\AppData\Local\Temp\scoped_dir207488_291414776" --window-size=1920x1080 data:,
+[1670444220.354][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1670444220.386][INFO]: [2ee2217ce4b3bd8539976cc5f90c22ce] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "108.0.5359.95",
+      "chrome": {
+         "chromedriverVersion": "108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})",
+         "userDataDir": "C:\\Users\\alt41\\AppData\\Local\\Temp\\scoped_dir207488_291414776"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:60291"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "2ee2217ce4b3bd8539976cc5f90c22ce"
+}
+[1670444220.793][INFO]: [2ee2217ce4b3bd8539976cc5f90c22ce] COMMAND Quit {
+}
+[1670444220.879][INFO]: [2ee2217ce4b3bd8539976cc5f90c22ce] RESPONSE Quit
