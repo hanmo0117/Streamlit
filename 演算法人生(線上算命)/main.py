@@ -241,5 +241,5 @@ if st.button('占卜結果'):
         st.error('您輸入的姓名可能有誤或不支援，請確認！')
 
 st.text('如果有任何問題，請聯絡b10203037@ntu.edu.tw\nHan Mo\n'
-        '程式碼：https://github.com/hanmo0117/streamlit/blob/develop/%E6%BC%94%E7%AE%97%E6%B3%95%E4%BA%BA%E7%94%9F.Streamlit/main.py\n'
-        'APP：https://hanmo0117-streamlit--streamlitmain-develop-20zx8t.streamlit.app/')
+        '程式碼：https://github.com/hanmo0117/Streamlit/blob/main/%E6%BC%94%E7%AE%97%E6%B3%95%E4%BA%BA%E7%94%9F(%E7%B7%9A%E4%B8%8A%E7%AE%97%E5%91%BD)/main.py\n'
+        'APP：https://hanmo0117-streamlit-main-0q3749.streamlit.app/')
