@@ -20,7 +20,7 @@ st.header('占卜')
 last_name = st.text_input('請輸入您的姓')
 first_name = st.text_input('請輸入您的名')
 birthday_date = st.date_input("請問您的生日是？", None, dt(1900, 1, 1), dt.today())
-birthday_time = st.time_input('還有時間？')
+birthday_time = st.time_input('還有出生時的時間？')
 
 Celestial_Stems = ["癸", "甲", "乙", "丙", "丁", "戊", "己", "庚", "辛", "壬", "癸"] #天干
 Terrestrial_Branches = ["亥", "子", "丑", "寅", "卯", "辰", "巳", "午", "未", "申", "酉", "戌", "亥", "子", "丑"] #地支
@@ -183,8 +183,6 @@ age = dt.today().year - birthday_year - ((dt.today().month, dt.today().day) < (b
 
 if st.button('占卜結果'):
     try:
-        with st.spinner('占卜中...'):
-            time.sleep(3)
         st.table(Table_1)
 
         texts = bs(requests.get(url = f"https://kangxizidian.com/search/index.php?stype=Word&sword={name}&detail=n").text)('td', align = "center", valign = "top")
