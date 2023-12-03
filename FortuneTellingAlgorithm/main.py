@@ -13,18 +13,22 @@ from bs4 import BeautifulSoup as bs
 st.title('演算法人生')
 
 st.header('介紹')
-st.text('這是一個占卜未來的程式 #測試版 1.0.4\n建議用chrome開啟\n姓和名都是最多2字')
+st.text('這是一個占卜未來的程式 #測試版 1.0.4\n姓和名都是最多2字')
 
 st.header('占卜')
 
 last_name = st.text_input('請輸入您的姓')
 first_name = st.text_input('請輸入您的名')
-birthday_date = st.date_input("請問您的生日是？", None, dt(1900, 1, 1), dt.today())
+birthday_date = st.date_input("請問您的生日是？", dt.today(), dt(1900, 1, 1), dt.today())
 birthday_time = st.time_input('還有出生時的時間？')
 
-Celestial_Stems = ["癸", "甲", "乙", "丙", "丁", "戊", "己", "庚", "辛", "壬", "癸"] #天干
-Terrestrial_Branches = ["亥", "子", "丑", "寅", "卯", "辰", "巳", "午", "未", "申", "酉", "戌", "亥", "子", "丑"] #地支
-Five_Elements = ['木', '火', '土', '金', '水'] #五行
+  # 天干
+Celestial_Stems = ["癸", "甲", "乙", "丙", "丁", "戊", "己", "庚", "辛", "壬", "癸"]
+  # 地支
+Terrestrial_Branches = ["亥", "子", "丑", "寅", "卯", "辰", "巳", "午", "未", "申", "酉", "戌", "亥", "子", "丑"]
+  # 五行
+Five_Elements = ['木', '火', '土', '金', '水']
+
 Color = ['綠', '紅、 紫', '黃、 咖啡', '白、 金', '藍、 黑']
 Number = ['3、 4', '9', '2、 5、 8', '6、 7', '0、 1']
 Five_Numbers = ['五格數理',
@@ -240,4 +244,4 @@ if st.button('占卜結果'):
 
 st.text('如果有任何問題，請聯絡b10203037@ntu.edu.tw\nHan Mo\n'
         '程式碼：https://github.com/hanmo0117/Streamlit/blob/main/FortuneTellingAlgorithm/main.py\n'
-        'APP：https://hanmo0117-streamlit--main-mpbokl.streamlit.app/')
+        'APP：https://app-fw7temmwxh4pxjmm8tmsw9.streamlit.app/\n')
